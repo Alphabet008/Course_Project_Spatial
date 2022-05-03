@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/main.css' />
+</head>
+
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger">
+            <div></div>
+        </div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/uploads">Uploads</a></li>
+                        <li><a class="active" href="/perform">Queries</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="textbox2">
+        <h1>
+            <%= title %>
+        </h1><br>
+        
+        <form action="/perform" method="post">
+            <p>Welcome to <%= title %>
+            </p><br>
+            <p> a) List country and city names whose PM 2.5 values are greater than 50 in 2015. </p><br>
+            <p> b) Calculate the AVG(PM 2.5) by country (show the results in a decreasing order). </p><br>
+            <p> c) Given a <input type="text" id="country_input" name="country_input" placeholder="country_input" /> from the user, show a historical PM 2.5 values by year. </p><br>
+            <p> d) Given a <input type="text" id="year_input" name="year_input" placeholder="year_input" /> and an input of <input type="text" id="color_pm25" name="color_pm25"  placeholder="color_pm25"/> level of health concernfrom the user, calculate a total of the affected population (in number). </p><br>
+            <label for="queries">Choose a queries:</label>
+            <select name="queries" id="queries" >
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+                <option value="d">d</option>
+            </select>
+            <input type="submit" value="Submit" class="button">
+        </form>
+        <p>
+            <%= message %>
+        </p>
+    </div>
+
+</body>
+
+</html>

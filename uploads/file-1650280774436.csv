@@ -1,0 +1,18 @@
+country,city,Year,pm25,latitude,longitude,population,wbinc16_text,Region,conc_pm25,color_pm25
+Bahrain,Hamad Town,2012,65.52,26.11666679,50.5,273105,High income,Eastern Mediterranean (HIC),>50,darkred
+Bahrain,Hidd,2012,41.44,26.21263313,50.67418671,188597,High income,Eastern Mediterranean (HIC),35-<50,red
+Bahrain,Ma'ameer,2012,63.95,26.13467789,50.61325455,314719,High income,Eastern Mediterranean (HIC),>50,darkred
+Bahrain,Nabih Saleh,2012,58.2,26.18232727,50.58475494,296427,High income,Eastern Mediterranean (HIC),>50,darkred
+Bahrain,Ras Hayan,2012,43.92,26.04000092,50.63138962,100388,High income,Eastern Mediterranean (HIC),35-<50,red
+Bahrain,Manama,2016,63.17021277,26.204833,50.571408,411162,High income,Eastern Mediterranean (HIC),>50,darkred
+Bangladesh,Barisal,2013,80,22.709999,90.360001,408041,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Barisal,2014,83,22.709999,90.360001,408041,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Barisal,2015,80,22.709999,90.360001,408041,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Chittagong,2013,66.05,22.3400005,91.8050005,4539393,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Chittagong,2014,72.9,22.3400005,91.8050005,4539393,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Chittagong,2015,65.6,22.3400005,91.8050005,4539393,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Dhaka,2013,85.83333333,23.765655,90.379074,17598228,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Dhaka,2014,84.7,23.7700005,90.375,17598228,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Dhaka,2015,81.56666667,23.765655,90.379074,17598228,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Dhaka,2016,56.8448564,23.796969,90.422207,17598228,Lower middle income,South-East Asia (LMIC),>50,darkred
+Bangladesh,Gazipur,2013,84.5,23.99,90.419998,213061,Lower middle income,South-East Asia (LMIC),>50,darkred
