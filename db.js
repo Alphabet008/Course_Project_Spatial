@@ -1,9 +1,9 @@
 
 const config = {
-  user: 'pm25',
-  password: '1234',
-  database: 'PM25DB',
-  server: 'localhost',
+  user: 'USER_ID',
+  password: 'PASSWORD',
+  database: 'DATABASE_NAME',
+  server: 'SERVER_NAME',
   options: {
     trustedConnection: true,
     trustServerCertificate: true,
