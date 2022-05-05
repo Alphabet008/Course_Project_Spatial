@@ -6,6 +6,17 @@ const fastcsv = require("fast-csv");
 const path = require("path");
 const uuid = require("uuid").v4;
 
+function connectWithRetry() {
+    return sql.connect(config, (err) => {
+        if (err) {
+            console.log(`Connection to DB failed, retry in 5s`);
+            sql.close();
+            setTimeout(connectWithRetry, 5000);
+        } else {
+            console.log('Connection to DB is now ready...');
+        }
+    });
+}
 
 class PM25Model {
     async getdata(filename) {
@@ -18,7 +29,7 @@ class PM25Model {
             .on('data', (data) => results.push(data))
             .on('end', async function ()  {
                 console.log(results);
-                await sql.connect(config).then(async (pool) => {
+                await connectWithRetry().then(async (pool) => {
                 for (let i = 1; i < results.length; i++){
                     await pool.request().input('city', sql.VARCHAR, results[i][1])
                         .query(
@@ -46,7 +57,7 @@ class PM25Model {
 
     async performQuerie(select,country_input,year_input,color_pm25) { 
         try {
-            await sql.connect(config);
+            await connectWithRetry();
             let result
             if (select == "a") {
                 result = await sql.query(
@@ -119,7 +130,7 @@ class PM25Model {
 
     async getPM25point(queries, year_input) {
         try {
-            await sql.connect(config);
+            await connectWithRetry();
             let result
             if (queries == "a" && year_input !== "") {
                 result = await sql.query(
@@ -197,7 +208,7 @@ class PM25Model {
 
     async getPM25pointnoD(queries) {
         try {
-            await sql.connect(config);
+            await connectWithRetry();
             let result
             if (queries == "d") {
                 result = await sql.query(
